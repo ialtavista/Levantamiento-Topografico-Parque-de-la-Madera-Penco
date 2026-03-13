@@ -61,14 +61,14 @@ var lyr_Cmara_3 = new ol.layer.Vector({
     <img src="styles/legend/Cmara_3_1.png" /> CON NIVEL<br />\
     <img src="styles/legend/Cmara_3_2.png" /> SELLADA<br />\
     <img src="styles/legend/Cmara_3_3.png" /> NO ENCONTRADA<br />' });
-var group_Solicitud = new ol.layer.Group({
-                                layers: [],
-                                fold: 'open',
-                                title: 'Solicitud'});
 var group_Levantamiento = new ol.layer.Group({
                                 layers: [lyr_Colector_2,lyr_Cmara_3,],
                                 fold: 'open',
                                 title: 'Levantamiento'});
+var group_Referencial = new ol.layer.Group({
+                                layers: [],
+                                fold: 'open',
+                                title: 'Referencial'});
 
 lyr_OpenStreetMap_0.setVisible(true);lyr_GoogleSatelite_1.setVisible(true);lyr_Colector_2.setVisible(true);lyr_Cmara_3.setVisible(true);
 var layersList = [lyr_OpenStreetMap_0,lyr_GoogleSatelite_1,group_Levantamiento];

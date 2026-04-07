@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:32718").setExtent([677220.634411, 5930551.721799, 680046.068833, 5932497.539844]);
+//ol.proj.get("EPSG:32718").setExtent([676990.450709, 5930728.860453, 680094.551476, 5932674.678498]);
 var wms_layers = [];
 
 
@@ -65,10 +65,6 @@ var group_Levantamiento = new ol.layer.Group({
                                 layers: [lyr_Colector_2,lyr_Cmara_3,],
                                 fold: 'open',
                                 title: 'Levantamiento'});
-var group_Referencial = new ol.layer.Group({
-                                layers: [],
-                                fold: 'open',
-                                title: 'Referencial'});
 
 lyr_OpenStreetMap_0.setVisible(true);lyr_GoogleSatelite_1.setVisible(true);lyr_Colector_2.setVisible(true);lyr_Cmara_3.setVisible(true);
 var layersList = [lyr_OpenStreetMap_0,lyr_GoogleSatelite_1,group_Levantamiento];

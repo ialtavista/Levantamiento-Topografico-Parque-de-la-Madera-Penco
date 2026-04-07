@@ -57,7 +57,7 @@ var style_Cmara_3 = function(feature, resolution){
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if (feature.get("IDENTIFICA") !== null) {
+    if (feature.get("IDENTIFICA") !== null && resolution > 0 && resolution < 1) {
         labelText = String(feature.get("IDENTIFICA"));
     }
     

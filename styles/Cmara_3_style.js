@@ -6,7 +6,7 @@ function categories_Cmara_3(feature, value, size, resolution, labelText,
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
                 switch(valueStr) {case 'INSPECCIONADA':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.0 + size,
+        image: new ol.style.Circle({radius: 4.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(255,249,0,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
@@ -15,7 +15,7 @@ function categories_Cmara_3(feature, value, size, resolution, labelText,
                     break;
 case 'CON NIVEL':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.0 + size,
+        image: new ol.style.Circle({radius: 4.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(222,0,225,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
@@ -24,7 +24,7 @@ case 'CON NIVEL':
                     break;
 case 'SELLADA':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.0 + size,
+        image: new ol.style.Circle({radius: 4.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(229,182,54,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
@@ -33,7 +33,7 @@ case 'SELLADA':
                     break;
 case 'NO ENCONTRADA':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.0 + size,
+        image: new ol.style.Circle({radius: 4.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(0,0,0,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
